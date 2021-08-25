@@ -1,0 +1,2 @@
+# InMobiSyndication
+Game syndication platform
