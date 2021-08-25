@@ -8,28 +8,41 @@
 import UIKit
 import InMobiSDK
 
-//Protocol for communicating with Publisher app.
-protocol InMobiSyndicationAdDelegate {
-    func adFinishedLoading()
-    func adFailedToLoad()
-}
+
+
+
 
 public class InMobiSyndicationViewController: UIViewController {
     
+    
+    
     //MARK: - Variables and Constants
     var interstitialAd: IMInterstitial?
-    var placementId: Int64 = 0
-    var delegate: InMobiSyndicationAdDelegate?
+     var placementId: Int64 = 0
+    public var adFinishedLoading : (()->())?
+    public var adErrorLoading: (()->())?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         interstitialAd = IMInterstitial(placementId: placementId)
+        interstitialAd?.delegate = self
         interstitialAd?.load()
+        print("*** load called")
     }
 
-    public func showInterstitialAd() {
+   public func showInterstitialAd() {
         interstitialAd?.show(from: self, with: .coverVertical)
+       print("*** show Interstital called")
     }
+    
+    public func setPlacementId(placementId: Int64 ) {
+        self.placementId = placementId
+        print("*** placement Id Setup")
+    }
+   
+    
+    
+    
 }
 
 //IMInterstitial delegate methods
@@ -41,12 +54,12 @@ extension InMobiSyndicationViewController: IMInterstitialDelegate {
     
     public func interstitialDidFinishLoading(_ interstitial: IMInterstitial!) {
         print("*** \(#function)")
-        delegate?.adFinishedLoading()
+        adFinishedLoading?()
     }
     
     public func interstitial(_ interstitial: IMInterstitial!, didFailToLoadWithError error: IMRequestStatus!) {
         print("*** \(#function), error: \(error.localizedDescription)")
-        delegate?.adFailedToLoad()
+        adErrorLoading?()
     }
     
     public func interstitialWillPresent(_ interstitial: IMInterstitial!) {

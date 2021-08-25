@@ -8,12 +8,12 @@
 import Foundation
 import InMobiSDK
 
-class InMobiSyndication {
-    static func setSyndicationPubId(id: String) {
+public class InMobiSyndication {
+   public  static func setSyndicationPubId(id: String) {
         
     }
     
-    static func setInMobiAccountId(id: String) {
+    public static func setInMobiAccountId(id: String) {
         IMSdk.initWithAccountID(id)
     }
 }
