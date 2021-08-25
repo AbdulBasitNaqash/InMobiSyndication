@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InMobiSyndication
+import Foundation
+import InMobiSDK
+@_exported import InMobiSyndication
+import Swift
+import UIKit
+@objc @_inheritsConvenienceInitializers public class InMobiSyndicationViewController : UIKit.UIViewController {
+  public var adFinishedLoading: (() -> ())?
+  public var adErrorLoading: (() -> ())?
+  @objc override dynamic public func viewDidLoad()
+  public func showInterstitialAd()
+  public func setPlacementId(placementId: Swift.Int64)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension InMobiSyndicationViewController : InMobiSDK.IMInterstitialDelegate {
+  @objc dynamic public func interstitialDidReceiveAd(_ interstitial: InMobiSDK.IMInterstitial!)
+  @objc dynamic public func interstitialDidFinishLoading(_ interstitial: InMobiSDK.IMInterstitial!)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial!, didFailToLoadWithError error: InMobiSDK.IMRequestStatus!)
+  @objc dynamic public func interstitialWillPresent(_ interstitial: InMobiSDK.IMInterstitial!)
+  @objc dynamic public func interstitialDidPresent(_ interstitial: InMobiSDK.IMInterstitial!)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial!, didFailToPresentWithError error: InMobiSDK.IMRequestStatus!)
+  @objc dynamic public func interstitialWillDismiss(_ interstitial: InMobiSDK.IMInterstitial!)
+  @objc dynamic public func interstitialDidDismiss(_ interstitial: InMobiSDK.IMInterstitial!)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial!, didInteractWithParams params: [Swift.AnyHashable : Any]!)
+}
+@_hasMissingDesignatedInitializers public class InMobiSyndication {
+  public static func setSyndicationPubId(id: Swift.String)
+  public static func setInMobiAccountId(id: Swift.String)
+  @objc deinit
+}
