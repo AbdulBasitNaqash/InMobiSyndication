@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B7038B6726D7646400BDB1A5 /* InMobiSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */; };
-		B7038B6826D7646400BDB1A5 /* InMobiSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B7038B7226D7662000BDB1A5 /* GamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7038B7026D7662000BDB1A5 /* GamesCollectionViewCell.swift */; };
 		B7038B7526D767C400BDB1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7038B7426D767C400BDB1A5 /* Assets.xcassets */; };
 		B755BD6826D7AEE600380D45 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755BD6726D7AEE600380D45 /* APIServices.swift */; };
@@ -24,6 +22,8 @@
 		B75FE52F26D6162B007927E9 /* InMobiSyndicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FE52D26D6162B007927E9 /* InMobiSyndicationViewController.swift */; };
 		B79A895F26D7BFB0000C7F52 /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79A895E26D7BFB0000C7F52 /* SDWebImage.xcframework */; };
 		B79A896326D7C3CD000C7F52 /* GameWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A896226D7C3CD000C7F52 /* GameWebViewController.swift */; };
+		B79A896A26D7D2BC000C7F52 /* InMobiSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79A896926D7D2BC000C7F52 /* InMobiSDK.xcframework */; };
+		B79A896B26D7D2BC000C7F52 /* InMobiSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B79A896926D7D2BC000C7F52 /* InMobiSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B7038B6826D7646400BDB1A5 /* InMobiSDK.xcframework in Embed Frameworks */,
+				B79A896B26D7D2BC000C7F52 /* InMobiSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InMobiSDK.xcframework; sourceTree = "<group>"; };
 		B7038B7026D7662000BDB1A5 /* GamesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7038B7426D767C400BDB1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B755BD6726D7AEE600380D45 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		B75FE52D26D6162B007927E9 /* InMobiSyndicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMobiSyndicationViewController.swift; sourceTree = "<group>"; };
 		B79A895E26D7BFB0000C7F52 /* SDWebImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDWebImage.xcframework; sourceTree = "<group>"; };
 		B79A896226D7C3CD000C7F52 /* GameWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWebViewController.swift; sourceTree = "<group>"; };
+		B79A896926D7D2BC000C7F52 /* InMobiSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InMobiSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79A896A26D7D2BC000C7F52 /* InMobiSDK.xcframework in Frameworks */,
 				B75FE52A26D615AF007927E9 /* WebKit.framework in Frameworks */,
 				B79A895F26D7BFB0000C7F52 /* SDWebImage.xcframework in Frameworks */,
 				B75FE52826D615A8007927E9 /* libsqlite3.0.tbd in Frameworks */,
-				B7038B6726D7646400BDB1A5 /* InMobiSDK.xcframework in Frameworks */,
 				B75FE52626D615A3007927E9 /* libxml2.tbd in Frameworks */,
 				B75FE52426D6159E007927E9 /* libz.tbd in Frameworks */,
 			);
@@ -148,8 +148,8 @@
 		B75FE52226D6159E007927E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B79A896926D7D2BC000C7F52 /* InMobiSDK.xcframework */,
 				B79A895E26D7BFB0000C7F52 /* SDWebImage.xcframework */,
-				B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */,
 				B75FE52926D615AF007927E9 /* WebKit.framework */,
 				B75FE52726D615A8007927E9 /* libsqlite3.0.tbd */,
 				B75FE52526D615A3007927E9 /* libxml2.tbd */,

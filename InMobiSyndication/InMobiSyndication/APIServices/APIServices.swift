@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum URLMethod: String {
+enum URLMethod: String {
     case GET = "GET"
     case POST = "POST"
     case DELETE = "DELETE"
@@ -15,7 +15,7 @@ public enum URLMethod: String {
     case PATCH = "PATCH"
 }
 
-public enum ErrorType: String {
+ enum ErrorType: String {
     case url = "url"
     case timeOut = "timeOut"
     case unknown = "unknown"
@@ -25,7 +25,7 @@ public enum ErrorType: String {
     case unauthorized = "unauthorized"
 }
 
-public struct ErrorData {
+struct ErrorData {
     public var errorType: ErrorType = .unknown
     public var message: String = "Wow ... you better run away, something terrible happened 😱"
 

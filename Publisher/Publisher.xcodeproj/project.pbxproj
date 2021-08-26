@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B78CBD9626D7D6130078F1C3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA83126D6284C00278353 /* WebKit.framework */; };
+		B78CBD9726D7D6170078F1C3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA83726D629A700278353 /* libxml2.tbd */; };
+		B78CBD9926D7D61D0078F1C3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B78CBD9826D7D61D0078F1C3 /* libsqlite3.tbd */; };
+		B78CBD9A26D7D6210078F1C3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA82D26D6284000278353 /* libz.tbd */; };
 		B79A896126D7C015000C7F52 /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79A896026D7C015000C7F52 /* SDWebImage.xcframework */; };
 		E06DA7FD26D6274700278353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DA7FC26D6274700278353 /* AppDelegate.swift */; };
 		E06DA7FF26D6274700278353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DA7FE26D6274700278353 /* SceneDelegate.swift */; };
@@ -36,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B7038B3326D7408500BDB1A5 /* InMobiSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InMobiSDK.xcframework; sourceTree = "<group>"; };
+		B78CBD9826D7D61D0078F1C3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B79A896026D7C015000C7F52 /* SDWebImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDWebImage.xcframework; path = ../InMobiSyndication/SDWebImage.xcframework; sourceTree = "<group>"; };
 		E06DA7F926D6274700278353 /* Publisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Publisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06DA7FC26D6274700278353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78CBD9A26D7D6210078F1C3 /* libz.tbd in Frameworks */,
+				B78CBD9926D7D61D0078F1C3 /* libsqlite3.tbd in Frameworks */,
+				B78CBD9726D7D6170078F1C3 /* libxml2.tbd in Frameworks */,
+				B78CBD9626D7D6130078F1C3 /* WebKit.framework in Frameworks */,
 				B79A896126D7C015000C7F52 /* SDWebImage.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,8 +148,8 @@
 		E06DA82C26D6284000278353 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B78CBD9826D7D61D0078F1C3 /* libsqlite3.tbd */,
 				B79A896026D7C015000C7F52 /* SDWebImage.xcframework */,
-				B7038B3326D7408500BDB1A5 /* InMobiSDK.xcframework */,
 				E06DA83726D629A700278353 /* libxml2.tbd */,
 				E06DA83126D6284C00278353 /* WebKit.framework */,
 				E06DA82F26D6284600278353 /* libsqlite3.0.tbd */,

@@ -14,26 +14,22 @@ public class InMobiSyndicationViewController: UIViewController {
     var interstitialAd: IMInterstitial?
     var placementId: Int64 = 0
     var cellIdentifier: String = "GamesCollectionViewCell"
-    
-    public var adFinishedLoading : (()->())?
-    public var adErrorLoading: (()->())?
-    
+        
     var collectionView: UICollectionView!
     var games: [GamesListModel]?
+    var isGameLoaded = false
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Games for you"
         setupCollectionView()
-        
-        interstitialAd = IMInterstitial(placementId: placementId)
+        interstitialAd = IMInterstitial(placementId: 1443100076943726)
         interstitialAd?.delegate = self
-        //interstitialAd?.load()
-        print("*** load called new one")
+        interstitialAd?.load()
         getGamesList()
     }
     
     func setupCollectionView() {
-        print("*** \(#function)")
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         flowLayout.itemSize = CGSize(width: 150, height: 150)
@@ -73,7 +69,14 @@ public class InMobiSyndicationViewController: UIViewController {
     func recordGameStartEvent(publisherId: Int, gameId: Int) {
         let timeStamp = UInt64((Date().timeIntervalSince1970) * 1000)
         
-        APIManager.shared.recordGameStartEvent(publisherId: publisherId, gameId: gameId, timeStamp: timeStamp)
+        APIManager.shared.recordGameEvent(eventURL: EVENT_START_URL, publisherId: publisherId, gameId: gameId, timeStamp: timeStamp)
+    }
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        if isGameLoaded {
+            interstitialAd?.load()
+            isGameLoaded = false
+        }
     }
 }
 
@@ -86,12 +89,11 @@ extension InMobiSyndicationViewController: IMInterstitialDelegate {
     
     public func interstitialDidFinishLoading(_ interstitial: IMInterstitial!) {
         print("*** \(#function)")
-        adFinishedLoading?()
+        showInterstitialAd()
     }
     
     public func interstitial(_ interstitial: IMInterstitial!, didFailToLoadWithError error: IMRequestStatus!) {
         print("*** \(#function), error: \(error.localizedDescription)")
-        adErrorLoading?()
     }
     
     public func interstitialWillPresent(_ interstitial: IMInterstitial!) {
@@ -150,11 +152,14 @@ extension InMobiSyndicationViewController: UICollectionViewDataSource, UICollect
         
         let gameController = GameWebViewController()
         gameController.gameURL = URL(string: games?[indexPath.row].gamePath ?? "")
-        self.present(gameController, animated: true) {
-            if let id = self.games?[indexPath.row].id {
-                self.recordGameStartEvent(publisherId: 13, gameId: id)
-            }
+        gameController.name = games?[indexPath.row].name ?? ""
+        gameController.gameId = games?[indexPath.row].id
+        self.navigationController?.pushViewController(gameController, animated: true)
+        if let id = self.games?[indexPath.row].id {
+            self.recordGameStartEvent(publisherId: 13, gameId: id)
         }
+        showInterstitialAd()
+        isGameLoaded = true
     }
     
 }

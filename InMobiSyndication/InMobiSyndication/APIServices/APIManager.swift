@@ -29,10 +29,11 @@ class APIManager {
         }
     }
     
-    func recordGameStartEvent(publisherId: Int, gameId: Int, timeStamp: UInt64) {
-        let url = EVENT_START_URL.appending("?publisher_id=\(publisherId)&game_id=\(gameId)&event_at=\(timeStamp)")
+    func recordGameEvent(eventURL: String, publisherId: Int, gameId: Int, timeStamp: UInt64) {
+        let url = eventURL.appending("?publisher_id=\(publisherId)&game_id=\(gameId)&event_at=\(timeStamp)")
         JSONFetcher.shared.fetchJSONData(url: url, method: .GET, bodyData: nil, headerValues: nil) {(data, error) in
              
         }
     }
+    
 }

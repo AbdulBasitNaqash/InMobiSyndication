@@ -1,44 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4kb-8e-B7N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--In Mobi Syndication View Controller-->
+        <scene sceneID="9lF-R3-F5R">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Publisher" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Qy0-dz-M2B" customClass="InMobiSyndicationViewController" customModule="InMobiSyndication" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fED-FX-g8P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4M6-p9-VQ9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CUZ-EE-GhV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlg-Im-90N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386.9565217391305" y="370.98214285714283"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Mh1-J1-2Fy">
+            <objects>
+                <viewController id="CwV-ys-AeQ" customClass="ViewController" customModule="Publisher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="kmV-in-fYi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BY-dv-k4z">
-                                <rect key="frame" x="136" y="318" width="120" height="95"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inmobiimage" translatesAutoresizingMaskIntoConstraints="NO" id="Pgx-jf-dVQ">
+                                <rect key="frame" x="0.0" y="62" width="414" height="369"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="ShowAd"/>
-                                <connections>
-                                    <action selector="showAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10L-Yt-IxL"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marioimage" translatesAutoresizingMaskIntoConstraints="NO" id="tTp-H4-LNY">
+                                <rect key="frame" x="20" y="486" width="157" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="eey-t3-DXK">
+                                <rect key="frame" x="210" y="486" width="171" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="temple run" translatesAutoresizingMaskIntoConstraints="NO" id="noK-wn-g98">
+                                <rect key="frame" x="87" y="626" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <viewLayoutGuide key="safeArea" id="UNn-yP-8oY"/>
+                        <color key="backgroundColor" red="0.03049059585" green="0.079383827749999997" blue="0.24315300579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="VVq-6l-Zwd">
+                        <imageReference key="image" image="homekit" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" red="0.97927278279999996" green="0.61030018330000002" blue="0.026640741150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwU-QS-jb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="75"/>
+            <point key="canvasLocation" x="-546.37681159420299" y="385.71428571428572"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9pg-l9-XaY">
+            <objects>
+                <tabBarController id="4kb-8e-B7N" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gNi-U7-Bbl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CwV-ys-AeQ" kind="relationship" relationship="viewControllers" id="C9a-qy-zns"/>
+                        <segue destination="Q5e-8V-EK5" kind="relationship" relationship="viewControllers" id="KKQ-r0-jDP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7m-km-Pfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="-294"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="Oll-J6-cIh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q5e-8V-EK5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Games" id="GHk-00-8ml">
+                        <imageReference key="image" image="gamecontroller" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" red="0.97927278279999996" green="0.61030018330000002" blue="0.026640741150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bgu-eA-X87">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qy0-dz-M2B" kind="relationship" relationship="rootViewController" id="wBD-7D-N7T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPR-5C-eSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.81159420289856" y="370.98214285714283"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="inmobiimage" width="2356" height="1328"/>
+        <image name="marioimage" width="348" height="256"/>
+        <image name="pokemon" width="1920" height="1080"/>
+        <image name="temple run" width="1200" height="800"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

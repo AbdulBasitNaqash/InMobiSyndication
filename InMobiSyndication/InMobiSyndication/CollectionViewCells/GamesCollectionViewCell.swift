@@ -38,6 +38,7 @@ class GamesCollectionViewCell: UICollectionViewCell {
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.frame = contentView.frame
+        stackView.spacing = 8
         contentView.addSubview(stackView)
 
         nameLabel.text = labelText
