@@ -3,22 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7038B6726D7646400BDB1A5 /* InMobiSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */; };
+		B7038B6826D7646400BDB1A5 /* InMobiSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7038B7226D7662000BDB1A5 /* GamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7038B7026D7662000BDB1A5 /* GamesCollectionViewCell.swift */; };
+		B7038B7526D767C400BDB1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7038B7426D767C400BDB1A5 /* Assets.xcassets */; };
+		B755BD6826D7AEE600380D45 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755BD6726D7AEE600380D45 /* APIServices.swift */; };
+		B755BD6A26D7AF1D00380D45 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755BD6926D7AF1D00380D45 /* APIManager.swift */; };
+		B755BD6D26D7AF9200380D45 /* GamesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755BD6C26D7AF9200380D45 /* GamesListModel.swift */; };
+		B755BD7026D7AFE300380D45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755BD6F26D7AFE300380D45 /* Constants.swift */; };
 		B75FE51A26D60DCE007927E9 /* InMobiSyndication.h in Headers */ = {isa = PBXBuildFile; fileRef = B75FE51826D60DCE007927E9 /* InMobiSyndication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B75FE52126D60E2A007927E9 /* InMobiSyndication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FE52026D60E2A007927E9 /* InMobiSyndication.swift */; };
 		B75FE52426D6159E007927E9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B75FE52326D6159E007927E9 /* libz.tbd */; };
 		B75FE52626D615A3007927E9 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B75FE52526D615A3007927E9 /* libxml2.tbd */; };
 		B75FE52826D615A8007927E9 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B75FE52726D615A8007927E9 /* libsqlite3.0.tbd */; };
 		B75FE52A26D615AF007927E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75FE52926D615AF007927E9 /* WebKit.framework */; };
-		B75FE52C26D615B5007927E9 /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75FE52B26D615B5007927E9 /* InMobiSDK.framework */; };
 		B75FE52F26D6162B007927E9 /* InMobiSyndicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FE52D26D6162B007927E9 /* InMobiSyndicationViewController.swift */; };
-		B75FE53026D6162B007927E9 /* InMobiSyndicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B75FE52E26D6162B007927E9 /* InMobiSyndicationViewController.xib */; };
+		B79A895F26D7BFB0000C7F52 /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79A895E26D7BFB0000C7F52 /* SDWebImage.xcframework */; };
+		B79A896326D7C3CD000C7F52 /* GameWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A896226D7C3CD000C7F52 /* GameWebViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B7038B6926D7646400BDB1A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B7038B6826D7646400BDB1A5 /* InMobiSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InMobiSDK.xcframework; sourceTree = "<group>"; };
+		B7038B7026D7662000BDB1A5 /* GamesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7038B7426D767C400BDB1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B755BD6726D7AEE600380D45 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		B755BD6926D7AF1D00380D45 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B755BD6C26D7AF9200380D45 /* GamesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListModel.swift; sourceTree = "<group>"; };
+		B755BD6F26D7AFE300380D45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B75FE51526D60DCE007927E9 /* InMobiSyndication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InMobiSyndication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75FE51826D60DCE007927E9 /* InMobiSyndication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InMobiSyndication.h; sourceTree = "<group>"; };
 		B75FE51926D60DCE007927E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,9 +56,9 @@
 		B75FE52526D615A3007927E9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		B75FE52726D615A8007927E9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		B75FE52926D615AF007927E9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		B75FE52B26D615B5007927E9 /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InMobiSDK.framework; sourceTree = "<group>"; };
 		B75FE52D26D6162B007927E9 /* InMobiSyndicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMobiSyndicationViewController.swift; sourceTree = "<group>"; };
-		B75FE52E26D6162B007927E9 /* InMobiSyndicationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InMobiSyndicationViewController.xib; sourceTree = "<group>"; };
+		B79A895E26D7BFB0000C7F52 /* SDWebImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDWebImage.xcframework; sourceTree = "<group>"; };
+		B79A896226D7C3CD000C7F52 /* GameWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75FE52C26D615B5007927E9 /* InMobiSDK.framework in Frameworks */,
 				B75FE52A26D615AF007927E9 /* WebKit.framework in Frameworks */,
+				B79A895F26D7BFB0000C7F52 /* SDWebImage.xcframework in Frameworks */,
 				B75FE52826D615A8007927E9 /* libsqlite3.0.tbd in Frameworks */,
+				B7038B6726D7646400BDB1A5 /* InMobiSDK.xcframework in Frameworks */,
 				B75FE52626D615A3007927E9 /* libxml2.tbd in Frameworks */,
 				B75FE52426D6159E007927E9 /* libz.tbd in Frameworks */,
 			);
@@ -48,6 +78,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7038B6F26D7660C00BDB1A5 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B7038B7026D7662000BDB1A5 /* GamesCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		B755BD6626D7AED900380D45 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				B755BD6726D7AEE600380D45 /* APIServices.swift */,
+				B755BD6926D7AF1D00380D45 /* APIManager.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		B755BD6B26D7AF8600380D45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B755BD6C26D7AF9200380D45 /* GamesListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B755BD6E26D7AFD600380D45 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B755BD6F26D7AFE300380D45 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		B75FE50B26D60DCD007927E9 = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +131,16 @@
 		B75FE51726D60DCE007927E9 /* InMobiSyndication */ = {
 			isa = PBXGroup;
 			children = (
+				B755BD6E26D7AFD600380D45 /* Constants */,
+				B755BD6B26D7AF8600380D45 /* Models */,
+				B755BD6626D7AED900380D45 /* APIServices */,
+				B7038B6F26D7660C00BDB1A5 /* CollectionViewCells */,
 				B75FE51826D60DCE007927E9 /* InMobiSyndication.h */,
 				B75FE51926D60DCE007927E9 /* Info.plist */,
-				B75FE52026D60E2A007927E9 /* InMobiSyndication.swift */,
 				B75FE52D26D6162B007927E9 /* InMobiSyndicationViewController.swift */,
-				B75FE52E26D6162B007927E9 /* InMobiSyndicationViewController.xib */,
+				B79A896226D7C3CD000C7F52 /* GameWebViewController.swift */,
+				B75FE52026D60E2A007927E9 /* InMobiSyndication.swift */,
+				B7038B7426D767C400BDB1A5 /* Assets.xcassets */,
 			);
 			path = InMobiSyndication;
 			sourceTree = "<group>";
@@ -80,7 +148,8 @@
 		B75FE52226D6159E007927E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B75FE52B26D615B5007927E9 /* InMobiSDK.framework */,
+				B79A895E26D7BFB0000C7F52 /* SDWebImage.xcframework */,
+				B7038B6626D7646400BDB1A5 /* InMobiSDK.xcframework */,
 				B75FE52926D615AF007927E9 /* WebKit.framework */,
 				B75FE52726D615A8007927E9 /* libsqlite3.0.tbd */,
 				B75FE52526D615A3007927E9 /* libxml2.tbd */,
@@ -111,6 +180,7 @@
 				B75FE51126D60DCD007927E9 /* Sources */,
 				B75FE51226D60DCD007927E9 /* Frameworks */,
 				B75FE51326D60DCD007927E9 /* Resources */,
+				B7038B6926D7646400BDB1A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,7 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75FE53026D6162B007927E9 /* InMobiSyndicationViewController.xib in Resources */,
+				B7038B7526D767C400BDB1A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75FE52F26D6162B007927E9 /* InMobiSyndicationViewController.swift in Sources */,
+				B7038B7226D7662000BDB1A5 /* GamesCollectionViewCell.swift in Sources */,
+				B755BD6A26D7AF1D00380D45 /* APIManager.swift in Sources */,
+				B755BD6D26D7AF9200380D45 /* GamesListModel.swift in Sources */,
+				B755BD7026D7AFE300380D45 /* Constants.swift in Sources */,
+				B79A896326D7C3CD000C7F52 /* GameWebViewController.swift in Sources */,
+				B755BD6826D7AEE600380D45 /* APIServices.swift in Sources */,
 				B75FE52126D60E2A007927E9 /* InMobiSyndication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

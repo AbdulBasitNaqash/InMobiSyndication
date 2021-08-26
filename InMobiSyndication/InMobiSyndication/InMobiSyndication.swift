@@ -7,6 +7,7 @@
 
 import Foundation
 import InMobiSDK
+import UIKit
 
 public class InMobiSyndication {
    public  static func setSyndicationPubId(id: String) {
@@ -16,4 +17,5 @@ public class InMobiSyndication {
     public static func setInMobiAccountId(id: String) {
         IMSdk.initWithAccountID(id)
     }
+    
 }

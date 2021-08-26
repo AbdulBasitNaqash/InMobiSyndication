@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAd(_ sender: UIButton) {
-        // Do any additional setup after loading the view.
-        controller = InMobiSyndicationViewController();
+        controller = InMobiSyndicationViewController()
+
         controller?.setPlacementId(placementId: 1443100076943726)
         controller?.adFinishedLoading = {
             self.controller?.showInterstitialAd()
@@ -28,8 +28,7 @@ class ViewController: UIViewController {
         controller?.adErrorLoading = {
             print("Error here")
         }
-        
-        controller?.view.backgroundColor = .orange
+        controller?.modalPresentationStyle = .fullScreen
         self.present(controller ?? UIViewController(), animated: false, completion: nil)
         
     }
