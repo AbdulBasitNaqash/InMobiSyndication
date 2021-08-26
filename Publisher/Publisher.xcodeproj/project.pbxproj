@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7038B3426D7408600BDB1A5 /* InMobiSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7038B3326D7408500BDB1A5 /* InMobiSDK.xcframework */; };
 		E06DA7FD26D6274700278353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DA7FC26D6274700278353 /* AppDelegate.swift */; };
 		E06DA7FF26D6274700278353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DA7FE26D6274700278353 /* SceneDelegate.swift */; };
 		E06DA80126D6274700278353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DA80026D6274700278353 /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		E06DA82E26D6284000278353 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA82D26D6284000278353 /* libz.tbd */; };
 		E06DA83026D6284600278353 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA82F26D6284600278353 /* libsqlite3.0.tbd */; };
 		E06DA83226D6284C00278353 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA83126D6284C00278353 /* WebKit.framework */; };
-		E06DA83426D6285900278353 /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA83326D6285900278353 /* InMobiSDK.framework */; };
 		E06DA83826D629A700278353 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA83726D629A700278353 /* libxml2.tbd */; };
 		E06DA84026D6354E00278353 /* InMobiSyndication.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06DA83F26D6354E00278353 /* InMobiSyndication.xcframework */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B7038B3326D7408500BDB1A5 /* InMobiSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InMobiSDK.xcframework; sourceTree = "<group>"; };
 		E06DA7F926D6274700278353 /* Publisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Publisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06DA7FC26D6274700278353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E06DA7FE26D6274700278353 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,9 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7038B3426D7408600BDB1A5 /* InMobiSDK.xcframework in Frameworks */,
 				E06DA84026D6354E00278353 /* InMobiSyndication.xcframework in Frameworks */,
 				E06DA83826D629A700278353 /* libxml2.tbd in Frameworks */,
-				E06DA83426D6285900278353 /* InMobiSDK.framework in Frameworks */,
 				E06DA83226D6284C00278353 /* WebKit.framework in Frameworks */,
 				E06DA83026D6284600278353 /* libsqlite3.0.tbd in Frameworks */,
 				E06DA82E26D6284000278353 /* libz.tbd in Frameworks */,
@@ -150,6 +151,7 @@
 		E06DA82C26D6284000278353 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7038B3326D7408500BDB1A5 /* InMobiSDK.xcframework */,
 				E06DA83F26D6354E00278353 /* InMobiSyndication.xcframework */,
 				E06DA83726D629A700278353 /* libxml2.tbd */,
 				E06DA83326D6285900278353 /* InMobiSDK.framework */,
@@ -480,6 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.Publisher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -504,6 +507,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.Publisher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

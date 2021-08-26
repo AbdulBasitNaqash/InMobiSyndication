@@ -14,23 +14,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+
+    @IBAction func showAd(_ sender: UIButton) {
         // Do any additional setup after loading the view.
         controller = InMobiSyndicationViewController();
-        controller?.setPlacementId(placementId: 2000000000001351)
+        controller?.setPlacementId(placementId: 1443100076943726)
         controller?.adFinishedLoading = {
-                self.controller?.showInterstitialAd()
+            self.controller?.showInterstitialAd()
         }
 
         controller?.adErrorLoading = {
             print("Error here")
         }
         
-    }
-
-    @IBAction func showAd(_ sender: UIButton) {
-        
         controller?.view.backgroundColor = .orange
-       
         self.present(controller ?? UIViewController(), animated: false, completion: nil)
         
     }
